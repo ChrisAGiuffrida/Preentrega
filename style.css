@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+ #menu a, button{
+     font-size: 18px;
+     font-weight: 600;
+    
+ }
+
+
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
+
+ .navbar{
+    background-color: #f3f3f3;
+ }
+
+.carousel-inner {
+    width: auto;
+     height: 500px;
+     max-height: 500px;
+}
+
+.grid-container{
+    padding-left: 150px;
+    padding-right: 150px;
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(2, 3fr);
+
+}
+
+.fs1{
+    padding-top: 80px;
+}
+
+.primerafila {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+}
+   
+
+.segundafila {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+footer {
+    padding-top: 100px;
+    background: #e00e1c;
+    min-height: 100px;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*MEDIA QUERIES PANTALLA ANCHA*/
+
+@media (max-width:1200px){
+    #intro, #locales {
+        width:90% ;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+  
+ 
+}
+/*MEDIA QUERIES PANTALLA SM*/
+
+
+@media (max-width:768px) {
+
+    #intro, #locales{
+        width:90% ;
+        margin:auto;
+    }
+    #primerafila #segundafila {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+
+}
+/*MEDIA QUERIES PANTALLA EXTRA-SM*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% ;
+    }
+    #servicios-fila-1 {
+        width:100% ;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap ;
+        justify-content: center ;
+        text-align: center;
+    }
+}
